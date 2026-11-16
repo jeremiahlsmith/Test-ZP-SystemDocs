@@ -1,6 +1,6 @@
 # AGENTS.md
 
-Instructions for AI coding agents working in this repository. Read this file and `README.md` before making any changes.
+Instructions for AI coding agents working in this repository. Read this file and `README.md` before making any changes. This is purely test docuemtnation!
 
 ## Project Summary
 
@@ -46,12 +46,12 @@ tests/           # unit/ and integration/
 
 ## Code Conventions
 
-- TypeScript strict mode; no `any` without a comment explaining why.
-- Business logic goes in `services/`, never in route handlers.
-- All database access goes through `repositories/`.
-- Validate all external input at the route boundary.
-- Use structured logging (`logger.info({ orderId }, "message")`); never `console.log`.
-- Write or update tests for every behavior change.
+* TypeScript strict mode; no `any` without a comment explaining why.
+* Business logic goes in `services/`, never in route handlers.
+* All database access goes through `repositories/`.
+* Validate all external input at the route boundary.
+* Use structured logging (`logger.info({ orderId }, "message")`); never `console.log`.
+* Write or update tests for every behavior change.
 
 ## Self-Documentation Rules
 
@@ -72,22 +72,25 @@ After updating, set the "Last reviewed" date in `README.md` to today's date.
 ## Boundaries
 
 **Always**
-- Run `npm run lint` and `npm test` before declaring a task complete.
-- Keep changes small and focused on the task.
-- Follow existing patterns in neighboring files.
+
+* Run `npm run lint` and `npm test` before declaring a task complete.
+* Keep changes small and focused on the task.
+* Follow existing patterns in neighboring files.
 
 **Ask first**
-- Adding or upgrading dependencies.
-- Changing database schemas (create a new migration; never edit old ones).
-- Changing public API behavior in a breaking way.
-- Modifying CI/CD workflows or Kubernetes manifests.
+
+* Adding or upgrading dependencies.
+* Changing database schemas (create a new migration; never edit old ones).
+* Changing public API behavior in a breaking way.
+* Modifying CI/CD workflows or Kubernetes manifests.
 
 **Never**
-- Commit secrets, tokens, or `.env` files.
-- Edit generated files or existing migrations.
-- Disable tests or lint rules to make a check pass.
-- Push directly to `main` or create release tags.
-- Invent endpoints, config values, or commands that are not in the repo.
+
+* Commit secrets, tokens, or `.env` files.
+* Edit generated files or existing migrations.
+* Disable tests or lint rules to make a check pass.
+* Push directly to `main` or create release tags.
+* Invent endpoints, config values, or commands that are not in the repo.
 
 ## Workflow
 
@@ -100,12 +103,12 @@ After updating, set the "Last reviewed" date in `README.md` to today's date.
 
 ## Commit and PR Style
 
-- Commit format: `type(scope): short summary` (e.g. `feat(orders): add cancel endpoint`).
-- Types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`.
-- PR descriptions include: what changed, why, how it was tested, and which docs were updated.
+* Commit format: `type(scope): short summary` (e.g. `feat(orders): add cancel endpoint`).
+* Types: `feat`, `fix`, `docs`, `refactor`, `test`, `chore`.
+* PR descriptions include: what changed, why, how it was tested, and which docs were updated.
 
 ## When Uncertain
 
-- Prefer asking a clarifying question over making assumptions about requirements.
-- If you cannot verify something (a command, a value, a behavior), say so explicitly instead of guessing.
-- If you notice outdated or conflicting documentation unrelated to your task, mention it in your summary rather than silently changing it.
+* Prefer asking a clarifying question over making assumptions about requirements.
+* If you cannot verify something (a command, a value, a behavior), say so explicitly instead of guessing.
+* If you notice outdated or conflicting documentation unrelated to your task, mention it in your summary rather than silently changing it.
